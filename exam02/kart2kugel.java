@@ -30,6 +30,8 @@ public class kart2kugel {
     System.out.println("Der Punkt lautet in Polarkoordinaten");
     System.out.println("r = " + r + ", PHI = PI * " + phi + ", THETA = PI * "
         + theta);
+
+    sc.close();
   }
 
 }

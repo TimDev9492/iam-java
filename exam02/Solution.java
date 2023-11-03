@@ -26,6 +26,8 @@ public class Solution {
 
     System.out.println("Der Punkt lautet in kartesischen Koordinaten");
     System.out.println("x = " + x + ", y = " + y + ", z = " + z);
+
+    sc.close();
   }
 
 }
