@@ -13,19 +13,19 @@ public class Raten {
             System.out.println("Enter amount of tries:");
             final int tries = sc.nextInt();
 
-            final int secretNumber = ((int)(Math.random() * 1000)) + 1;
+            final int secretNumber = ((int) (Math.random() * 1000)) + 1;
 
-            // boolean hasWon = false;
+            boolean hasWon = false;
 
-            for (int i = 0; i < tries; i++) {
+            for (int i = 0; i < tries && !hasWon; i++) {
                 System.out.println("Enter your next guess:");
                 int guess = sc.nextInt();
                 if (guess == secretNumber) {
-                    // hasWon = true;
+                    hasWon = true;
                     System.out.println("You correctly guessed the secret number " + secretNumber);
-                    break;
+                } else {
+                    System.out.println("The number you guessed is too " + ((guess < secretNumber) ? "small." : "big."));
                 }
-                System.out.println("The number you guessed is too " + ((guess < secretNumber) ? "small." : "big."));
             }
         }
 
