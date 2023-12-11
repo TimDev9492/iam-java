@@ -1,8 +1,6 @@
-import java.text.ParseException;
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class Horner {
 
